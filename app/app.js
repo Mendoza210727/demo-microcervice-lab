@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-
+// prueba
 /** Helpers */
 const num = (x) => Number(x);
 const badNum = (x) => !Number.isFinite(num(x));
