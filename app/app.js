@@ -14,7 +14,7 @@ app.get("/", (_req, res) => {
 });
 
 /** GET /calc/suma?a=5&b=7 */
-app.get("/calc/suma", (req, res) => {
+app.get("/calc/suma1", (req, res) => {
   const { a, b } = req.query;
   if (badNum(a) || badNum(b)) return error(res, "Parámetros inválidos: usa ?a=<n>&b=<n>");
   res.json({ ok: true, op: "suma", a: +a, b: +b, result: +a + +b });
